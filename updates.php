@@ -46,6 +46,8 @@
 
                     $res = mysqli_query($conn, $updatequery);
 
+                    header('location:index.php');
+
                     if ($res) {
                 ?>
                         <script>

@@ -49,7 +49,7 @@
                 <td><?php echo $res['jobPost']; ?></</td>
                 <td class="operation-icons">
                     <a href="./updates.php?id=<?php echo $res['id']; ?>" class="edit-icon"  title="update">✏️</a>
-                    <a href="#" class="delete-icon" title="delete" >🗑️</a>
+                    <a href="./delete.php?id=<?php echo $res['id']; ?>" class="delete-icon" title="delete" >🗑️</a>
                 </td>
               </tr>
 
