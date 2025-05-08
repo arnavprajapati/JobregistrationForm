@@ -10,7 +10,7 @@
 
 <body>
   <div class="container">
-    <a href="index.html" class="back-btn">← Back to Form</a>
+    <a href="index.php" class="back-btn">← Back to Form</a>
     <h1>List of candidates for web developer job</h1>
     <table>
       <thead>
@@ -48,8 +48,8 @@
                 <td><?php echo $res['refer']; ?></</td>
                 <td><?php echo $res['jobPost']; ?></</td>
                 <td class="operation-icons">
-                    <a href="#" class="edit-icon">✏️</a>
-                    <a href="#" class="delete-icon">🗑️</a>
+                    <a href="./updates.php?id=<?php echo $res['id']; ?>" class="edit-icon"  title="update">✏️</a>
+                    <a href="#" class="delete-icon" title="delete" >🗑️</a>
                 </td>
               </tr>
 
