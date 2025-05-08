@@ -26,7 +26,38 @@
         </tr>
       </thead>
       <tbody>
+        <?php
         
+          include 'connection.php';
+          
+          $selectQuery = " select * from jobregistration ";
+
+          $query = mysqli_query($conn,$selectQuery);
+
+          $nums = mysqli_num_rows($query);
+
+          while($res = mysqli_fetch_array($query)){
+
+            ?>
+              <tr>
+                <td><?php echo $res['id']; ?></td>
+                <td><?php echo $res['name']; ?></</td>
+                <td><?php echo $res['degree']; ?></</td>
+                <td><?php echo $res['mobile']; ?></</td>
+                <td><?php echo $res['email']; ?></</td>
+                <td><?php echo $res['refer']; ?></</td>
+                <td><?php echo $res['jobPost']; ?></</td>
+                <td class="operation-icons">
+                    <a href="#" class="edit-icon">✏️</a>
+                    <a href="#" class="delete-icon">🗑️</a>
+                </td>
+              </tr>
+
+            <?php
+
+          }
+
+        ?>
       </tbody>
     </table>
   </div>

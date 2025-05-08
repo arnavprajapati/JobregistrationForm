@@ -15,7 +15,7 @@
       <p>
         Please fill all the details carefully. This form can change your life.
       </p>
-      <a href="list.html" class="check-form">Check Form</a>
+      <a href="list.php" class="check-form">Check Form</a>
     </div>
     <div class="right-panel">
       <h2>Apply for Web Developer Post</h2>
